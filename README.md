@@ -1,77 +1,37 @@
-# MediCare App - 4-6 Hour Assessment
+# 💊 MediCare App
 
-## Live Demo (UI only): https://meds-buddy-check.lovable.app/
+> A role-based medication tracker built with **React + TypeScript + Supabase**
 
-## Current State of the codebase
+🌐 **Live Demo**: https://meds-buddy-check-k6ojdlbrs-karthiks-projects-718090a5.vercel.app/
 
-This is a React medication management app with dual user roles (patients/caretakers). Currently features:
+---
 
-- Role-based dashboard system for each user account with runtime switching (for simplcity)
+## 🚀 Features
 
-- UI for medication tracking with calendar visualization
+### 🔐 Auth (Supabase)
+- ✅ Sign Up / Sign In / Sign Out
+- ✅ Role-based dashboards (Patient / Caretaker)
 
-- Mock data for streaks, adherence rates, and medication logs
+### 💊 Medication Management
+- ✅ Add / View / Delete Medications
+- ✅ Mark meds as taken (for today)
+- ✅ Realtime sync between Patient & Caretaker
 
-- Photo upload interface for medication proof
+### 📷 Image Upload
+- ✅ Upload medication proof to Supabase Storage
 
-- Notification settings UI (non-functional)
+### 📈 Adherence Tracking
+- ✅ Calendar View
+- ✅ Adherence % indicator
 
-- All data is stored in local state (no persistence)
+---
 
+## ⚙️ Tech Stack
 
-## Core Implementation Tasks
+- 🧩 React + TypeScript
+- 🛡️ Supabase (Auth, DB, Realtime, Storage)
+- 🚀 React Query
+- 🧪 Vitest + Testing Library
+- 🎨 Tailwind CSS
 
-### Phase 1 (Required - 4 hours):
-- Supabase authentication setup
-- Basic CRUD for adding medications
-- Basic CRUD for marking medication taken for the day
-- Connect one dashboard to real data
-
-### Phase 2 (Optional - 2 hours):
-- Caretaker-patient real time updates
-- Basic adherence tracking
-
-### Phase 3 (Bonus):
-- File uploads
-
-**Provided:**
-- UI components and styles
-
-## Required Features:
-1. User login/signup with Supabase Auth
-2. Add medications (name, dosage, frequency)
-3. View medication list
-4. Mark medication as taken today
-5. Simple adherence percentage display
-
-## Technical Requirements:
-- Use provided React + TypeScript template
-- Integrate Supabase for auth and database
-- Use React Query for data fetching
-- Implement error handling
-- Clean, readable code
-
-## Other Requirements:
-- Use Git with meaningful commits
-- Implement proper form validation
-- Handle loading and error states consistently
-- Write at least 2-3 meaningful tests using vitest
-- Include a README with setup instructions
-
-## Technical Challenges:
-
-**Include:**
-- Optimistic updates using react query
-- Proper TypeScript generics usage
-
-## Deployment Bonus:
-Deploy to Vercel/Netlify
-
-## We will evaluate:
-- Code organization and architecture decisions
-- Error handling and edge cases
-- TypeScript usage (proper typing, no `any`)
-- Component composition and reusability
-- State management approach
-- Performance considerations (unnecessary re-renders)
-- Security awareness (input sanitization)
+---
